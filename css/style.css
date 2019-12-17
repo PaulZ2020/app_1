@@ -1,6 +1,7 @@
 @import "fonts.css";
 
 body{
+    font-family: 'Open Sans';
     background: gray;
 }
 ul, li{
@@ -17,7 +18,6 @@ ul, li{
     margin-left: 40px;
 }
 .menu__item a{
-    font-family: 'Open Sans Semibold';
     font-size: 20px;
     color: #212121;
 }
@@ -25,3 +25,81 @@ ul, li{
     text-decoration: none;
     color: #868686;
 }
+/* Шапка */
+.header > div{
+    color: white;
+    text-align: center;
+    padding: 180px 0;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: 0 100%;
+}
+.header__title {
+    font-size: 60px;
+    /* line-height: 0.367;
+    text-align: center;
+    position: absolute; */
+    margin-bottom: 25px;
+  }
+  .header__text {
+    font-size: 22px;
+    /* line-height: 1;
+    text-align: center; */
+    /* position: absolute; */
+    padding-bottom: 110px;
+  }
+  .button{
+      width: 220px;
+      height: 70px;
+      margin: 0 12px;
+      color: whitesmoke;
+      transition: .3s;
+      /* padding: 28px 35px; */
+  }
+  .button:hover{
+    background: #0a5851;
+    border: #00897b;
+  }
+  .button_empty{
+    background: transparent;
+    border: 3px solid #f8f8f8;
+  }
+  .button_full{
+      background: #00897b;
+      border: #00897b;
+  }
+  /* О нас */
+  .about{
+    background: white;
+    text-align: center;
+    padding: 125px 0;
+}
+.about__title {
+    font-family: 'Open Sans Semibold';
+    font-size: 30px;
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    line-height: 22px;
+  }
+  .about__subtitle{
+    font-size: 15px;
+    color: rgb(33, 33, 33);
+    line-height: 22px;
+    margin-top: 25px;
+    margin-bottom: 125px;
+  }
+  .about__text {
+    font-size: 15px;
+    color: rgb(33, 33, 33);
+    line-height: 22px;
+    margin-top: 25px;
+  }
+  .about_h3 {
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    line-height: 22px;
+    padding: 40px 0 0 0;
+  }
+  
+    
