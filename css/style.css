@@ -26,7 +26,7 @@ ul, li{
     color: #868686;
 }
 /* Шапка */
-.header > div{
+.header{
     color: white;
     text-align: center;
     padding: 180px 0;
@@ -54,19 +54,13 @@ ul, li{
       margin: 0 12px;
       color: whitesmoke;
       transition: .3s;
-      /* padding: 28px 35px; */
+      background: transparent;
+      border: 3px solid #f8f8f8;
+      cursor: pointer;
   }
   .button:hover{
     background: #0a5851;
     border: #00897b;
-  }
-  .button_empty{
-    background: transparent;
-    border: 3px solid #f8f8f8;
-  }
-  .button_full{
-      background: #00897b;
-      border: #00897b;
   }
   /* О нас */
   .about{
@@ -101,5 +95,155 @@ ul, li{
     line-height: 22px;
     padding: 40px 0 0 0;
   }
-  
-    
+  /* Наши услуги */
+  .services{
+    background: #e4fdf9;
+    text-align: center;
+    padding: 170px 0 120px 0;
+}
+.our_card{
+    padding: 58px 20px 49px;
+    background: #fff;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.our_card:hover{
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.25);
+}
+.our_card:hover .icon{
+    color: white;
+}
+.our_card:hover .button-services{
+    border-color: white;
+    color: white;
+}
+.icon{
+    font-size: 60px;
+    transition: 0.3s;
+    color: black;
+}
+.button-services{
+    width: 150px;
+    height: 55px;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    background: transparent;
+    font-family: 'Open Sans Semibold';
+    transition: 0.3s;
+}
+.button-services{
+    cursor: pointer;
+}
+.portfolio{
+    background: #fff;
+    text-align: center;
+    padding: 120px 0 135px;
+}
+.portfolio button{
+    width: 170px;
+    height: 55px;
+    color: #000;
+    background: transparent;
+    border: 2px solid #00897b;
+    margin: 115px 0;
+    transition: 0.3s;
+}
+.portfolio button:nth-of-type(1){
+    width: 100px;
+    height: 55px;
+}
+.portfolio button:hover,
+.focused {
+    color: #fff;
+    background: #00897b;
+    border: #00897b;
+}
+.portfolio img{
+    margin-bottom: 30px;
+}
+.filter{
+    padding: 120px 0;
+}
+div[filter]:hover img{
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+.text{
+    display: none;
+}
+div[filter]:hover .text{
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    text-align: center;
+}
+.pricing{
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #f0f1f1;
+    text-align: center;
+}
+.price{
+    background: #fff;
+    text-align: center;
+    transition: 0.3s;
+}
+.price:hover{
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.25);;
+}
+.price__head{
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-image: url(../img/pricing_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 210px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    line-height: 42px;
+    /* text-align: center; */
+}
+.price__head p{
+    font-size: 25px;
+}
+.price__head sup {
+    font-size: 25px;
+    vertical-align: middle;
+}
+.price__head sub {
+    font-size: 17px;
+    vertical-align: middle;
+}
+.price__body{
+    font-size: 17px;
+    color: #212121;
+    width: 178px;
+    margin: 0 auto;
+}
+.price__body li{
+    padding: 35px 0 15px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.price__footer{
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+.price__footer button{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #000;
+    width: 180px;
+    height: 60px;
+    transition: 0.3s;
+}
+.price__footer button:hover{
+    background: #00897b;
+    border: 2px solid #00897b;
+    color: #fff;
+}
