@@ -161,6 +161,7 @@ ul, li{
     border: #00897b;
 }
 .portfolio img{
+    max-width: 100%;
     margin-bottom: 30px;
 }
 .filter{
@@ -193,6 +194,7 @@ div[filter]:hover .text{
     background: #fff;
     text-align: center;
     transition: 0.3s;
+    margin-bottom: 20px;
 }
 .price:hover{
     box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.25);;
@@ -318,7 +320,7 @@ div[filter]:hover .text{
 .blog{
     text-align: left;
     margin-top: 60px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .blog div{
     margin: 15px 0 20px;
@@ -416,4 +418,121 @@ div[filter]:hover .text{
     padding: 20px 0;
     text-align: center;
     font-weight: 600;
+}
+#toTop{
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    background: #00897b;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #000000;
+}
+/* .menu-icon{
+    display: none;
+} */
+
+.img-fluid{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    nav{
+        display: none;
+    }
+    .logo-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-icon{
+        /* display: block; */
+        background: #00897b;
+        border: none;
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .blog{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header{
+        padding: 20px;
+    }
+    .header__title{
+        font-size: 45px;
+    }
+    .header__text{
+        margin-bottom: 20px;
+    }
+    .button{
+        margin-bottom: 10px;
+    }
+    .about{
+        padding: 20px;
+    }
+    .about__text{
+        margin-bottom: 20px;
+    }
+    .services{
+        padding: 20px;
+    }
+    .portfolio{
+        padding: 20px;
+    }
+    .filter{
+        padding: 20px;
+    }
+    .pricing{
+        padding: 20px;
+    }
+    .team{
+        padding: 20px 0;
+    }
+    .multiple-item{
+        margin-top: 10px;
+    }
+    .team img{
+        max-width: 320px;
+    }
+    .dots-style{
+        margin-top: 10px;
+    }
+    .left, .right{
+        flex-direction: column;
+    }
+    .blog-item, .blog{
+        width: 100%;
+    }
+    .right>div:first-child{
+        order:1;
+    }
+    .right>div:last-child{
+        order:2;
+    }
+    .blog i{
+        margin-right: 5px;
+    }
+    .button_blog{
+        margin-top: 10px;
+    }
+    .footer{
+        padding: 20px;
+    }
+    .form{
+        margin-top: 20px;
+    }
 }
